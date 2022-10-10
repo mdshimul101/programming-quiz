@@ -13,19 +13,19 @@ const Header = () => {
             </div>
             <div>
               <Link
-                className="mr-4 font-semibold text-slate-800 hover:text-white ease-in-out duration-500"
+                className="mr-4 font-semibold text-slate-800 hover:text-white ease-in-out duration-400"
                 to="/"
               >
                 Home
               </Link>
               <Link
-                className="mr-4 font-semibold text-slate-800 hover:text-white ease-in-out duration-500"
+                className="mr-4 font-semibold text-slate-800 hover:text-white ease-in-out duration-400"
                 to="/statistics"
               >
                 Statistics
               </Link>
               <Link
-                className="mr-4 font-semibold text-slate-800 hover:text-white ease-in-out duration-500"
+                className="mr-4 font-semibold text-slate-800 hover:text-white ease-in-out duration-400"
                 to="/blog"
               >
                 Blog

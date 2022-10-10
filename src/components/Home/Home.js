@@ -15,10 +15,15 @@ const Home = () => {
             </h2>
           </div>
           <div>
-            <img className="w-52" src="favicon.png" alt="" />
+            <img className="md:w-52" src="favicon.png" alt="" />
           </div>
         </div>
-        <div className='grid grid-cols-2 gap-4 mt-20'>
+        <div className='mt-10'>
+          <h2 className="text-center text-3xl font-bold text-slate-800 py-3 border bg-slate-300">
+            Topic
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-4 mt-20">
           {topics.data.map((topic) => (
             <Topics key={topic.id} topic={topic}></Topics>
           ))}
