@@ -1,5 +1,6 @@
 import React from 'react';
 import {ArrowRightCircleIcon} from '@heroicons/react/24/solid';
+import { Link } from 'react-router-dom';
 
 const Topics = ({topic, showQuiz}) => {
     //console.log(topic);
@@ -12,14 +13,16 @@ const Topics = ({topic, showQuiz}) => {
             <h2>Topic Name : {name}</h2>
             <p>Total Number of Quiz : {total}</p>
           </div>
-          <div onClick={() =>showQuiz(id)} className="flex bg-slate-500">
-            <button className=" px-4 py-2 w-full text-white text-lg">
-              Practice {name} Quiz
-            </button>
-            <div className="flex justify-center items-center mr-3">
-              <ArrowRightCircleIcon className="h-8 w-8  text-white"></ArrowRightCircleIcon>
+          <Link to={`/quiz/${id}`}>
+            <div className="flex justify-between bg-slate-500">
+              <button className=" px-4 py-2 text-white text-lg">
+                Practice {name} Quiz
+              </button>
+              <div className="flex justify-center items-center mr-3">
+                <ArrowRightCircleIcon className="h-8 w-8  text-white"></ArrowRightCircleIcon>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     );

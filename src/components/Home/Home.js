@@ -1,12 +1,10 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
-import Quiz from '../Quiz/Quiz';
+import {  useLoaderData } from 'react-router-dom';
+
 import Topics from '../Topics/Topics';
 
 const Home = () => {
-    const showQuiz = (id) =>{
-        <Quiz id={id}></Quiz>
-    };
+    
     const topics = useLoaderData();
     return (
       <div className="w-10/12 m-auto">
@@ -29,7 +27,7 @@ const Home = () => {
         </div>
         <div className="grid md:grid-cols-2 gap-4 my-20">
           {topics.data.map((topic) => (
-            <Topics key={topic.id} topic={topic} showQuiz={showQuiz}></Topics>
+            <Topics key={topic.id} topic={topic} ></Topics>
           ))}
         </div>
       </div>
