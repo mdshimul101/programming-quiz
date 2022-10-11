@@ -1,7 +1,7 @@
 import React from 'react';
 import {ArrowRightCircleIcon} from '@heroicons/react/24/solid';
 
-const Topics = ({topic}) => {
+const Topics = ({topic, showQuiz}) => {
     //console.log(topic);
     const {id,name,total,logo} = topic;
     return (
@@ -12,7 +12,7 @@ const Topics = ({topic}) => {
             <h2>Topic Name : {name}</h2>
             <p>Total Number of Quiz : {total}</p>
           </div>
-          <div className="flex bg-slate-500">
+          <div onClick={() =>showQuiz(id)} className="flex bg-slate-500">
             <button className=" px-4 py-2 w-full text-white text-lg">
               Practice {name} Quiz
             </button>
