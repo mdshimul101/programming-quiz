@@ -7,9 +7,9 @@ const Header = () => {
         <nav className="bg-slate-400 py-5">
           <div className=" sm:flex justify-between  w-10/12 sm:m-auto pl-3">
             <div>
-              <h1 className="text-slate-800 text-xl font-bold">
+              <Link to="/" className="text-slate-800 text-xl font-bold">
                 Programming Quiz
-              </h1>
+              </Link>
             </div>
             <div>
               <Link

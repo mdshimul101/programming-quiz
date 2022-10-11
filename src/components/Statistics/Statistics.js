@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { BarChart, Bar,XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar,XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const Statistics = () => {
     const loader = useLoaderData();
@@ -9,17 +9,17 @@ const Statistics = () => {
     loader.data.map((v) => data.push(v));
        
     return (
-      <div className="w-10/12 m-auto text-center">
+      <div className="App">
         <h2 className="my-5 text-slate-600 text-lg font-bold">
           Total Question
         </h2>
-        <div>
+        <div className="w-full m-auto">
           
             <BarChart
-              width={500}
-              height={300}
+              width={350}
+              height={500}
               data={data}
-              className="w-full  m-auto"
+              className="w-full m-auto"
               margin={{
                 top: 5,
                 right: 30,

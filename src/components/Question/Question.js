@@ -29,14 +29,15 @@ const Question = ({ questions ,index}) => {
     
 }
   
-
+const len = question.length-4;
+const q = question.slice(3,len);
   return (
     <div className="my-10">
       <div className="mt-5">
         <div className="border">
           <div onClick={showCorrectAnsToast} className="flex justify-between py-2 px-4 w-full my-3">
             <h1 className="w-11/12">
-              {index + 1}. {question}
+              {index + 1}. {q}
             </h1>
             <button>
               <EyeIcon className="md:h-6 md:w-6 h-6 w-6 text-slate-500" />
