@@ -6,7 +6,7 @@ const Topics = ({topic}) => {
     const {id,name,total,logo} = topic;
     return (
       <div className="">
-        <div className="border">
+        <div className="border bg-slate-200">
           <img className="w-full" src={logo} alt="" />
           <div className="md:flex justify-between p-3 text-slate-700 text-lg">
             <h2>Topic Name : {name}</h2>
