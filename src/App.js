@@ -5,7 +5,6 @@ import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
-import Topic from './components/Topic/Topic';
 import Main from './layout/Main';
 
 function App() {

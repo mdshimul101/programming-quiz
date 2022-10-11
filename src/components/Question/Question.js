@@ -14,26 +14,22 @@ const Question = ({ questions ,index}) => {
   const rightAnsToast = () => toast("Your ans is Correct");
   const wrongAnsToast = () => toast("Your ans is Wrong!");
 
-  let ans;
+  
   const onChange = (e) =>{
     setAnswer(e.target.value)
     if(e.target.value === correctAnswer)
     {
-      
-        ans = correctAnswer;
         rightAnsToast();
         return;
     }
     else{
-      
-      ans = e.target.value;
         wrongAnsToast();
         return;
     }
     
 }
   
-  
+
   return (
     <div className="my-10">
       <div className="mt-5">
@@ -56,17 +52,14 @@ const Question = ({ questions ,index}) => {
                   value={option}
                   onChange={onChange}
                 />
-                {option}
+                <span> {option}</span>
               </div>
             ))}
           </div>
-          <div className="ml-4 my-1">
-            {
-              (ans) ? <p>Right</p> : <p>Wrong</p>
-            }
-          </div>
+          
         </div>
       </div>
+      
     </div>
   );
 };
