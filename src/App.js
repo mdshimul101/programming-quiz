@@ -20,15 +20,17 @@ function App() {
           element: <Home></Home>,
         },
         {
-        path:'/quiz/:quizId',
-        loader: async({params}) => {
-         return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`);
+          path: "/quiz/:quizId",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.quizId}`
+            );
+          },
+          element: <Quiz></Quiz>,
         },
-        element:<Quiz></Quiz>
-        
-       },
         {
           path: "/statistics",
+          loader: async() => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Statistics></Statistics>,
         },
         {
