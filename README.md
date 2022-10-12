@@ -1,3 +1,27 @@
+# Project Name:
+ Programming Quiz
+
+# Live Link:
+ Live Demo: 'https://programming-quiz-side.netlify.app/'
+
+# Project Description
+# Technologies:
+1. Tailwind CSS
+2. JSX
+3. JS
+4. ReactJs
+5. React-Router
+6. React Toastify
+7. React Recharts
+8. Hero-icon
+## Features:
+1. Single Page Application website with react-router.
+2. This website is fully functional and fully responsive for user.
+3. Programming Quiz is online-based quiz website.User can practice their task in this website.
+4. User can see the statistical representation of the total number of quizzes for each topic in Bar-Chart.
+5. This is Responsive website.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

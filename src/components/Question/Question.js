@@ -8,7 +8,7 @@ const Question = ({ questions ,index}) => {
     
 
   const { question, correctAnswer, options } = questions;
-  const [answer , setAnswer] = useState();
+  const [  ,setAnswer] = useState();
 
   const showCorrectAnsToast = () => toast(`${correctAnswer}`);
   const rightAnsToast = () => toast("Your ans is Correct");

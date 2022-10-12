@@ -17,6 +17,7 @@ const Quiz = () => {
               index={index}
             ></Question>
           ))}
+          <p>hello Quiz</p>
         </div>
       </div>
     );
